@@ -22,7 +22,7 @@ result = {}
 
 def convert_pdf_to_string(file_path):
     text_file = open(textfilename, 'w', encoding='utf-8')
-    pdf = PdfFileReader('ECONOMY 700 MCQs with Explanatory Note.pdf')
+    pdf = PdfFileReader(file_path)
     count = pdf.getNumPages()
     with pdfplumber.open(file_path) as pdf:
         for i in range(count):

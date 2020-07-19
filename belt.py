@@ -15,25 +15,20 @@ import fitz
 import filetype
 import PyPDF2
 from PIL import Image
-
+textfilename = 'finaltext.txt'
 # result is output dict
 result = {}
 
 
 def convert_pdf_to_string(file_path):
-    output_string = StringIO()
-    laparams = LAParams()
-    laparams.all_texts = True
-    with open(file_path, 'rb') as in_file:
-        parser = PDFParser(in_file)
-        doc = PDFDocument(parser)
-        rsrcmgr = PDFResourceManager()
-        device = TextConverter(rsrcmgr, output_string, laparams=LAParams())
-        interpreter = PDFPageInterpreter(rsrcmgr, device)
-        for page in PDFPage.create_pages(doc):
-            interpreter.process_page(page)
-
-    return (output_string.getvalue())
+    text_file = open(textfilename, 'w', encoding='utf-8')
+    pdf = PdfFileReader('ECONOMY 700 MCQs with Explanatory Note.pdf')
+    count = pdf.getNumPages()
+    with pdfplumber.open(file_path) as pdf:
+        for i in range(count):
+            page_text = pdf.pages[i].extract_text()
+            n = text_file.write(page_text)
+    text_file.close()
 
 
 def ocrtotext():
@@ -234,11 +229,7 @@ if __name__ == "__main__":
     file_name = file + '.pdf'
 
     if not isScanned(file_name):
-        text = convert_pdf_to_string(file_name)
-        textfilename = 'finaltext.txt'
-        text_file = open(textfilename, 'w', encoding='utf-8')
-        n = text_file.write(text)
-        text_file.close()
+        convert_pdf_to_string(file_name)
 
     try:
         getBookName_and_author_name(file_name)

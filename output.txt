@@ -1,4 +1,5 @@
 Enter the name of the pdf: >? ECONOMY 700 MCQs with Explanatory Note
+Error in Method -->  isExamYearMentioned
 author --> None
 creator --> None
 producer --> PyPDF2
@@ -6,23 +7,19 @@ subject --> None
 title --> None
 Language --> English
 Scanned --> False
-
-Topics --> ECONOMY
-1.Micro-Macro Economics
+Topics --> D-86
+1.
+Micro-Macro Economics 1 - 8
 • Demand & Supply/Price/Revenue & Cost
-•Proﬁt & Loss/Recession & Depression
-• Market, Factors of Product
-1 - 8
-2. Public Finance in India
-9 - 29
+• Proﬁt & Loss/Recession & Depression
+• Market, Factors of Producoducon & Inflaon
+2. Public Finance in India 9 - 29
 • Budget, Deﬁcit Financing & Government Subsidies
-•Taxes: Types & Methods
+• Taxes: Types & Methods
 • Banking & Insurance
-•Stock exchange & SEBI
-3.
-Indian Economy
-30 - 62
-• Naonal Income & Human Development Index
+• Stock exchange & SEBI
+3. Indian Economy 30 - 62join telegram  https://t.me/reetmaterials2
+• National Income & Human Development Index
 • Five year Plans
 • Poverty & Unemployment
 • Agriculture Sector
@@ -33,11 +30,9 @@ Indian Economy
 • Foreign Trade Policies
 • Foreign Exchange Services
 • Special Economic Zones & FDI
-5. World Economy/Miscellaneous 
-
+5. World Economy/Miscellaneous 70 - 86join telegram  https://t.me/reetmaterials2
 ContentType --> questions
-Questions are starting from page no --> 5
+Questions are starting from page no = --> 5
 Type of Question --> MCQ based question
 areQuestionsImageBased --> True
-Exam year mentioned --> False
 Ans with ques --> False

@@ -31,10 +31,6 @@ def convert_pdf_to_string(file_path):
     text_file.close()
 
 
-def ocrtotext():
-    pass
-
-
 def getBookName_and_author_name(file_name):
     path = file_name
     with open(path, 'rb') as f:

@@ -226,6 +226,9 @@ if __name__ == "__main__":
 
     if not isScanned(file_name):
         convert_pdf_to_string(file_name)
+    else:
+        print("It is a scanned pdf.")
+        sys.exit(0)
 
     try:
         getBookName_and_author_name(file_name)

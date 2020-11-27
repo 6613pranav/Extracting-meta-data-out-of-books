@@ -13,6 +13,6 @@ The metadata that is to be extracted from a book are.
 5. If content present then detail of begining and ending page ( to find from which page the question start)
 6. Is answer are with questions or are at separate page.
 7. Topic covered in the books.
-8. Do exam year mentioned or not 
+8. exam year is mentioned or not 
 9. Content type - questions or other 
 10. Does it has image based questions or not

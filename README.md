@@ -15,4 +15,4 @@ The metadata that is to be extracted from a book are.
 7. Topic covered in the books.
 8. Do exam year mentioned or not 
 9. Content type - questions or other 
-10. Do it has image based questions or not
+10. Does it has image based questions or not
